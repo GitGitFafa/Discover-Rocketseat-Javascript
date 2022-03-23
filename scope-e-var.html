@@ -1,0 +1,38 @@
+<script>
+// global scope using var
+
+//Escopo global é todo o conteúdo dentro do bloco script. Escopo local é tudo que está dentro das chaves. 
+
+// var é considerado parte do escopo global
+
+ console.log('> existe x antes do bloco? ', x)
+
+// O console não irá identificar o valor de x, pois ele foi declarado após à pergunta acima. Aparecerá como undefined.
+
+/* O Js conseguiu sim identificar o valor de x, porém ele está indefinido. O truque que ele executa é este: 
+
+script
+
+var x  <-- o Js traz a variável global para antes da pergunta. 
+
+  console.log('> existe x antes do bloco? ', x)
+
+  {
+    x=0  <-- O valor de x continua declarado no escopo local, porém a variável subiu para antes da pergunta no console.log
+
+  }
+// O nome desse processo se chama HOISTING(ELEVAÇÃO)
+
+/script
+
+*/
+
+// vamos iniciar um bloco
+{
+  var x= 0
+  
+
+} // aqui fechamos o bloco
+
+console.log('> existe x depois do bloco? ', x)
+</script>

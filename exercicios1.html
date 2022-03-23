@@ -1,0 +1,116 @@
+<script>
+/*
+//1. Declare uma variável de nome weight
+let weight 
+
+
+//2. Que tipo de dado é a variável acima?
+console.log(typeof weight)
+
+*/
+
+/*3. Declare uma variável e atribua valores para cada um dos dados:
+* name: String
+*age: Number (integer)
+*stars: Number (float)
+*isSubscribed: Boolean
+*/
+/*
+  let name ="Mayk"
+  let age = 23
+  let stars = 4.8
+  let isSubscribed = true
+
+
+
+*/
+
+/*
+  4. A variável student abaixo é de que tipo de dado?
+
+   console.log(typeof student)
+
+  4.1 Atribua a ela as mesmas propriedades e valores do exercício 3.
+
+   let student ={ 
+    name: 'Mayk',
+    age: 23,
+    stars: 4.8,
+    isSubscribed: true
+}
+
+
+  4.2 Mostre no console a seguinte mensagem: 
+  <name> de idade <age> pesa <weight> kg.
+      Atenção  substitua <name> <age> e <weight> pelos valores de cada propriedade do objeto
+*/
+
+
+
+  let student ={ 
+    name: 'Mayk',
+    age: 23,
+    weight: 60.8,
+    isSubscribed: true
+}
+/*
+  console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg.`)
+
+*/
+/*
+5. Declare uma variável do tipo Array, de nome students e atribua a ela nenhum valor, ou seja, somente o Array vazio
+
+*/
+//let students = []
+
+//console.log(typeof students)
+/*
+6. Reatibua valor para a variável acima, colocando dentro dela o objeto student da questão 4. (não copiar e colar o objeto, mas usar o objeto criado e inserir ele no Array.)
+
+*/
+
+/*let students =[
+  student
+]
+*/
+//console.log(students)
+
+
+// 7. Coloque no console o valor da posição zero do array acima
+
+//console.log(students[0])
+
+//8. Crie um novo student e coloque na posição 1 do array students
+
+let student2 = {
+  name: 'rafy',
+  age: 35,
+  weight: 70.2,
+  isSubscribed: true
+
+}
+
+
+let students =[
+  student,
+  student2
+]
+
+console.log(students[1])
+
+/*
+  9. Sem rodar o código , responda qual é a resposta do código abaixo e por quê. Após sua resposta, rode o código e veja se você acertou.
+
+
+  console.log(a)
+  var a = 1
+
+*/
+
+/*
+Resposta: O console irá mostrar uma mensagem de 'undefined'. Ele identificou que há uma variável a, porém está abaixo da pergunta feita ao console, e pra identificar essa variável, precisou usar um recurso chamado de hoisting, que durante a leitura , joga a variável acima da consulta para então ser lida como undefined. Ele sabe que existe essa variável, porém não está declarada corretamente até aquela consulta, não fazendo sentido pro console responder corretamente.
+*/
+
+</script>
+
+

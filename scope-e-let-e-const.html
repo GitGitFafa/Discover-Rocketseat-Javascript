@@ -1,0 +1,26 @@
+<script>
+//explicando como o const funciona: Uma vez a variável sendo declarada como constante, ela não se alterará dentro do código, não importando o escopo inserido. A exceção ocorre quando a mesma variável é declarada como uma nova constante. 
+  const y = 1;
+{
+  const y = 0
+  console.log('> existe y? ', y)
+}
+
+console.log('> existe y depois do bloco?' , y)
+
+
+
+
+//explicando o let
+// const e let são locais e só funcionam no escopo onde foi criada.
+
+let y=1;
+{
+
+  let y=0;
+  console.log('> existe y', y)
+
+}
+
+console.log('>existe y depois do bloco?', y)
+</script>
